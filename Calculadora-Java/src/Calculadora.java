@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-/*
+/*                                      CALCULADORA MODULAR COMPLETO.
+
             ETAPA 1
 1. Importa o Scanner.
 2. Criando o Objeto
@@ -21,6 +22,8 @@ public class Calculadora {
             System.out.println(" === CALCULADORA JAVA === ");
             System.out.println("1. Somar");
             System.out.println("2. Subtrair");
+            System.out.println("3. Multiplicar");
+            System.out.println("4. Dividir");
             System.out.println("0. Sair");
             System.out.println("Escolha uma opção: ");
 
@@ -32,7 +35,7 @@ public class Calculadora {
             if (opcao == 0) {
                 continuar = false; // Isso faz o loop parar na próxima volta
                 System.out.println("Encerrando a calculadora... até logo!");
-            } else if (opcao >= 1 && opcao <= 2) {
+            } else if (opcao >= 1 && opcao <= 4) {
                 System.out.println("Digite o primeiro número: ");
                 double num1 = leitor.nextDouble();
                 System.out.println("Digite o segundo número: ");
@@ -55,13 +58,21 @@ Agora que já temos a opção e os números, precisamos de um "guarda de trânsi
 
                 switch (opcao) {
                     case 1:
-//Chamando o método somar e subtrair e passando num1 e num2 como argumentos
+//Chamando os Quatros Métodos e passando num1 e num2 como argumentos
                         double resultadoSoma = somar(num1, num2);
                         System.out.println("Resultado da Soma: " + resultadoSoma);
                         break;
                     case 2:
                         double resultadoSubtrair = subtrair(num1, num2);
                         System.out.println("Resultado da Subtração: " + resultadoSubtrair);
+                        break;
+                    case 3:
+                        double  resultadoMultiplicar = multiplicar(num1, num2);
+                        System.out.println("Resultado da Multiplicação: " + resultadoMultiplicar);
+                        break;
+                    case 4:
+                        double resultadoDividir = dividir(num1, num2);
+                        System.out.println("Resultado a Divisão: " + resultadoDividir);
                         break;
                 }
             } else {
@@ -82,22 +93,41 @@ Em vez de fazer (num1 + num2) direto no System.out.println, vamos criar "caixas"
 main que fazem esse trabalho.
 O que devemos fazer agora:
 Fora do bloco public static void main, que a gente já se encontra fora dela, mas ainda dentro da classe,
-vamos criar os dois métodos, tanto o somar quanto o Subtrair.
+vamos criar os quatros métodos, o Adição, Subtração, Multiplicação e Divisão. QUE SÃO A ETAPA 5
 
 
 */
 
-// Cirando o método soma
+// CRIANDO OS QUATRO MÉTODOS
 
 
-    public static double somar (double a, double b) {
+    public static double somar (double a, double b)
+    {
         return a + b;
     }
 
     public static double subtrair (double a, double b) {
         return a - b;
-
     }
 
+    public static double multiplicar (double a, double b){
+        return a * b;
+    }
 
+    public static double dividir (double a, double b){
+        if ( b == 0){
+            System.out.println("Erro: Divisão por zero não permitida.");
+            return 0;
+        }
+        return a / b;
+    }
 }
+
+
+
+
+
+
+
+
+
