@@ -1,20 +1,26 @@
-# Calculadora-Modular-Java
-Projeto de calculadora interativa desenvolvida para praticar Métodos, Estruturas de Repetição e a classe Scanner em Java.
+🧮 Calculadora Modular em Java (Full Operations)
+Este projeto consolida a transição dos fundamentos de lógica para o Desenvolvimento Estruturado e Clean Code em Java. A aplicação foi projetada para ser extensível, utilizando conceitos de modularização para separar a lógica de negócio da interface de usuário.
 
-# 🧮 Calculadora Modular em Java
+🚀 Evolução Técnica e Conceitos Aplicados
+Modularização Avançada: Divisão total de responsabilidades através de métodos estáticos independentes para as quatro operações aritméticas.
 
-Este projeto marca a minha transição dos fundamentos de lógica para o **Desenvolvimento Estruturado** em Java. 
-O foco principal foi aplicar conceitos de modularização e controle de fluxo contínuo.
+Tratamento de Exceções e Regras de Negócio: Implementação de lógica de proteção contra divisões por zero, demonstrando atenção à estabilidade do sistema.
 
-## 🚀 Tecnologias e Conceitos Aplicados
+Controle de Fluxo Contínuo (While Loop): Gerenciamento de estado da aplicação para permitir interações múltiplas sem interrupções.
 
-*   **Modularização com Métodos**: Criação de funções específicas para cada operação aritmética, promovendo a reutilização de código.
-*   **Controle de Fluxo (While)**: Implementação de um loop que permite realizar múltiplos cálculos sem a necessidade de reiniciar a aplicação.
-*   **Estrutura de Decisão (Switch-Case)**: Organização eficiente das opções de menu para direcionar o fluxo do programa.
-*   **Entrada de Dados (Scanner)**: Interação em tempo real com o usuário via console.
-*   **Tipagem Dinâmica (Double)**: Suporte para cálculos com números decimais, aumentando a precisão da ferramenta.
+Estrutura de Decisão Escalável (Switch-Case): Organização de menu que facilita a inclusão de futuras funcionalidades (como operações científicas).
 
-## 🛠️ Como Funciona
-O programa exibe um menu interativo onde o usuário escolhe a operação desejada. 
-Ao selecionar uma operação (Somar ou Subtrair), o sistema solicita dois números, processa o cálculo através de um método dedicado e retorna o resultado, voltando ao menu principal logo em seguida. 
-Para encerrar, basta digitar a opção `0`.
+Interatividade com Scanner: Fluxo de entrada e saída de dados otimizado para interação via console.
+
+Precisão Numérica (Double): Manipulação de dados de ponto flutuante para garantir precisão em cálculos complexos e decimais.
+
+🛠️ Funcionalidades Implementadas
+Atualmente, o sistema suporta o ciclo completo das operações básicas:
+
+Adição e Subtração.
+
+Multiplicação.
+
+Divisão (com validação de denominador).
+
+Loop de Execução: O programa permanece ativo até que o comando de saída (0) seja acionado.
